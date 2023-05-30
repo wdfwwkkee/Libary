@@ -14,7 +14,30 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+	
+	<Window.Styles>
+		<Style Selector="Button">
+			<Setter Property="HorizontalAlignment" Value="Stretch"/>
+			<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBox, Button">
+			<Setter Property="Margin" Value="10"/>
+		</Style>
+		<Style Selector="TextBlock">
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="StackPanel">
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+			<Setter	Property="VerticalAlignment" Value="Center"/>
+			<Setter Property="Width" Value="320"/>
+		</Style>
+	</Window.Styles>
+	<StackPanel>
+		<TextBlock>Логин</TextBlock>
+		<TextBox Text="{Binding Login}"></TextBox>
+		<TextBlock>Пароль</TextBlock>
+		<TextBox Text="{Binding Password}" PasswordChar="#"></TextBox>
+			<Button Command="{Binding AuthCommand}">Вход</Button>
+			<TextBlock Text="{Binding Message}"></TextBlock>
+	</StackPanel>
 </Window>

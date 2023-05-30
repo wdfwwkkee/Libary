@@ -26,14 +26,40 @@ C:\Users\student\.nuget\packages\avalonia\0.10.18\lib\netcoreapp2.0\Avalonia.The
 C:\Users\student\.nuget\packages\avalonia\0.10.18\lib\netcoreapp2.0\Avalonia.Visuals.dll
 C:\Users\student\.nuget\packages\avalonia.win32\0.10.18\lib\netstandard2.0\Avalonia.Win32.dll
 C:\Users\student\.nuget\packages\avalonia.x11\0.10.18\lib\netstandard2.0\Avalonia.X11.dll
+C:\Users\student\.nuget\packages\azure.core\1.24.0\lib\net5.0\Azure.Core.dll
+C:\Users\student\.nuget\packages\azure.identity\1.6.0\lib\netstandard2.0\Azure.Identity.dll
 C:\Users\student\.nuget\packages\dynamicdata\7.1.1\lib\net5.0\DynamicData.dll
 C:\Users\student\.nuget\packages\harfbuzzsharp\2.8.2.1-preview.108\lib\net6.0\HarfBuzzSharp.dll
 C:\Users\student\.nuget\packages\jetbrains.annotations\10.3.0\lib\netstandard1.0\JetBrains.Annotations.dll
+C:\Users\student\.nuget\packages\microsoft.bcl.asyncinterfaces\1.1.1\ref\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\student\.nuget\packages\microsoft.codeanalysis.csharp\3.4.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\student\.nuget\packages\microsoft.codeanalysis.csharp.scripting\3.4.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\student\.nuget\packages\microsoft.codeanalysis.common\3.4.0\lib\netstandard2.0\Microsoft.CodeAnalysis.dll
 C:\Users\student\.nuget\packages\microsoft.codeanalysis.scripting.common\3.4.0\lib\netstandard2.0\Microsoft.CodeAnalysis.Scripting.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\Microsoft.CSharp.dll
+C:\Users\student\.nuget\packages\microsoft.data.sqlclient\5.0.1\ref\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\student\.nuget\packages\microsoft.entityframeworkcore.abstractions\7.0.5\lib\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\student\.nuget\packages\microsoft.entityframeworkcore\7.0.5\lib\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\student\.nuget\packages\microsoft.entityframeworkcore.relational\7.0.5\lib\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\student\.nuget\packages\microsoft.entityframeworkcore.sqlserver\7.0.5\lib\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\student\.nuget\packages\microsoft.extensions.caching.abstractions\7.0.0\lib\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\student\.nuget\packages\microsoft.extensions.caching.memory\7.0.0\lib\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\student\.nuget\packages\microsoft.extensions.configuration.abstractions\7.0.0\lib\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\student\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\7.0.0\lib\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\student\.nuget\packages\microsoft.extensions.dependencyinjection\7.0.0\lib\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\student\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\lib\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\student\.nuget\packages\microsoft.extensions.logging\7.0.0\lib\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\student\.nuget\packages\microsoft.extensions.options\7.0.0\lib\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\student\.nuget\packages\microsoft.extensions.primitives\7.0.0\lib\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\student\.nuget\packages\microsoft.identity.client\4.45.0\lib\netcoreapp2.1\Microsoft.Identity.Client.dll
+C:\Users\student\.nuget\packages\microsoft.identity.client.extensions.msal\2.19.3\lib\netcoreapp2.1\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\student\.nuget\packages\microsoft.identitymodel.abstractions\6.21.0\lib\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\student\.nuget\packages\microsoft.identitymodel.jsonwebtokens\6.21.0\lib\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\student\.nuget\packages\microsoft.identitymodel.logging\6.21.0\lib\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\student\.nuget\packages\microsoft.identitymodel.protocols\6.21.0\lib\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\student\.nuget\packages\microsoft.identitymodel.protocols.openidconnect\6.21.0\lib\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\student\.nuget\packages\microsoft.identitymodel.tokens\6.21.0\lib\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\student\.nuget\packages\microsoft.sqlserver.server\1.0.0\lib\netstandard2.0\Microsoft.SqlServer.Server.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\Microsoft.VisualBasic.Core.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\Microsoft.VisualBasic.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\Microsoft.Win32.Primitives.dll
@@ -73,7 +99,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Diagnostics.TraceSource.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Diagnostics.Tracing.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.dll
-C:\Users\student\.nuget\packages\system.drawing.common\4.5.0\ref\netstandard2.0\System.Drawing.Common.dll
+C:\Users\student\.nuget\packages\system.drawing.common\5.0.0\ref\netcoreapp3.0\System.Drawing.Common.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Drawing.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Drawing.Primitives.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Dynamic.Runtime.dll
@@ -82,6 +108,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Globalization.Calendars.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Globalization.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Globalization.Extensions.dll
+C:\Users\student\.nuget\packages\system.identitymodel.tokens.jwt\6.21.0\lib\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.IO.Compression.Brotli.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.IO.Compression.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.IO.Compression.FileSystem.dll
@@ -101,6 +128,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Linq.Expressions.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Linq.Parallel.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Linq.Queryable.dll
+C:\Users\student\.nuget\packages\system.memory.data\1.0.2\lib\netstandard2.0\System.Memory.Data.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Memory.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Net.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Net.Http.dll
@@ -162,6 +190,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Security.Cryptography.Encoding.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Security.Cryptography.OpenSsl.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Security.Cryptography.Primitives.dll
+C:\Users\student\.nuget\packages\system.security.cryptography.protecteddata\5.0.0\ref\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Security.Cryptography.X509Certificates.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Security.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.4\ref\net7.0\System.Security.Principal.dll
