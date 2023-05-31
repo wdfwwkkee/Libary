@@ -22,3 +22,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/student/Desktop/UsmanovBochkarevKhayrullin/UsmanovBochkarevKhayrullin/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/student/Desktop/UsmanovBochkarevKhayrullin/UsmanovBochkarevKhayrullin/Views/UserWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

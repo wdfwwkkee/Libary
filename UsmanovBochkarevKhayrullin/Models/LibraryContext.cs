@@ -29,7 +29,7 @@ public partial class LibraryContext : DbContext
     {
         modelBuilder.Entity<Book>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(e => e.Id).HasName("Books_PK");
 
             entity.Property(e => e.Author)
                 .HasMaxLength(100)
@@ -37,7 +37,6 @@ public partial class LibraryContext : DbContext
             entity.Property(e => e.Genre)
                 .HasMaxLength(100)
                 .IsUnicode(false);
-            entity.Property(e => e.Id).ValueGeneratedOnAdd();
             entity.Property(e => e.Name)
                 .HasMaxLength(100)
                 .IsUnicode(false);
@@ -46,14 +45,11 @@ public partial class LibraryContext : DbContext
 
         modelBuilder.Entity<LibaryCard>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("LibaryCard");
+            entity.HasKey(e => e.Id).HasName("LibaryCards_PK");
 
             entity.Property(e => e.Group)
                 .HasMaxLength(100)
                 .IsUnicode(false);
-            entity.Property(e => e.Id).ValueGeneratedOnAdd();
             entity.Property(e => e.MiddleOfName)
                 .HasMaxLength(100)
                 .IsUnicode(false);
@@ -67,9 +63,8 @@ public partial class LibraryContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(e => e.Id).HasName("Users_PK");
 
-            entity.Property(e => e.Id).ValueGeneratedOnAdd();
             entity.Property(e => e.Login)
                 .HasMaxLength(100)
                 .IsUnicode(false);

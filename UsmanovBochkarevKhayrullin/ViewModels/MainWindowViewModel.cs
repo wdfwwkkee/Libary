@@ -34,11 +34,23 @@ namespace UsmanovBochkarevKhayrullin.ViewModels
             if (user == null)
             {
                 Message = "Неправильный логин или пароль";
+                return;
             }
-            else
+            switch (user.Role)
             {
-                Message = "Login";
+                case "admin":
+                    AdminWindow adminWindow = new AdminWindow();
+                    adminWindow.DataContext = new AdminWindowViewModel();
+                    adminWindow.Show();
+                    break;
+                case "user":
+                    UserWindow userWindow = new UserWindow();
+                    userWindow.DataContext = new UserWindowViewModel();
+                    userWindow.Show();
+                    break;
             }
+            Owner.Close();
+            
         }
     }
 }
