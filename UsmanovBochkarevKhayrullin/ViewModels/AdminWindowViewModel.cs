@@ -19,7 +19,7 @@ namespace UsmanovBochkarevKhayrullin.ViewModels
             set => this.RaiseAndSetIfChanged(ref _books, value);
         }
 
-        private User user { get; set; }
+        public User user { get; set; }
 
         public AdminWindowViewModel()
         {

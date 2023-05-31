@@ -13,7 +13,38 @@
 		<vm:AdminWindowViewModel/>
 	</Design.DataContext>
 	<DockPanel>
-		<ListBox Items="{Binding Books}"></ListBox>
+				<StackPanel  HorizontalAlignment="Right"  DockPanel.Dock="Top"  Orientation="Horizontal" >
+					<TextBlock Text="Текущий пользователь: "></TextBlock>
+					<TextBlock Text="{Binding user.Login}" HorizontalAlignment="Right"></TextBlock>
+					<TextBlock Text="("></TextBlock>
+					<TextBlock Text="{Binding user.Role}" Foreground="Red"></TextBlock>
+					<TextBlock Text=")"></TextBlock>
+				</StackPanel>
+		<StackPanel DockPanel.Dock="Top" HorizontalAlignment="Right" Orientation="Horizontal">
+			<Button>
+				<TextBlock Text="Изменить"></TextBlock>
+			</Button>
+			<Button>
+				<TextBlock Text="Сохранить"></TextBlock>
+			</Button>
+		</StackPanel>
+		<ListBox Items="{Binding Books}">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Grid>
+						<StackPanel>
+							<TextBlock Text="{Binding Name}" FontStyle="Oblique" FontSize="16"></TextBlock>
+							<TextBlock Text="{Binding Author}" FontSize="13"></TextBlock>
+							<TextBlock Text="{Binding Genre}" FontSize="15"></TextBlock>
+						</StackPanel>
+						<StackPanel>
+							<TextBlock Text="В наличие:" FontStyle="Oblique" FontSize="16" HorizontalAlignment="Right"></TextBlock>
+							<TextBlock Text="{Binding Amount}" HorizontalAlignment="Right" ></TextBlock>
+						</StackPanel>
+					</Grid>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
 		
 	</DockPanel>
 </Window>

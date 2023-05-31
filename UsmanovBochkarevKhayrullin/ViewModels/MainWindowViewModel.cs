@@ -40,7 +40,7 @@ namespace UsmanovBochkarevKhayrullin.ViewModels
             {
                 case "admin":
                     AdminWindow adminWindow = new AdminWindow();
-                    adminWindow.DataContext = new AdminWindowViewModel();
+                    adminWindow.DataContext = new AdminWindowViewModel(user);
                     adminWindow.Show();
                     break;
                 case "user":
