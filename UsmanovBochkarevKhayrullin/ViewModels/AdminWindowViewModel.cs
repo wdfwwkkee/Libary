@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UsmanovBochkarevKhayrullin.Models;
+using UsmanovBochkarevKhayrullin.Views;
 
 namespace UsmanovBochkarevKhayrullin.ViewModels
 {
@@ -21,9 +22,11 @@ namespace UsmanovBochkarevKhayrullin.ViewModels
 
         public User user { get; set; }
 
+        LibraryContext libraryContext;
+
         public AdminWindowViewModel()
         {
-            LibraryContext libraryContext = new LibraryContext();
+            libraryContext = new LibraryContext();
             libraryContext.Users.Load();
             libraryContext.Books.Load();
             Books = libraryContext.Books.Local.ToObservableCollection();
@@ -31,6 +34,17 @@ namespace UsmanovBochkarevKhayrullin.ViewModels
         public AdminWindowViewModel(User user): this()
         {
             this.user = user;
+        }
+        public void Save()
+        {
+            libraryContext.SaveChanges();
+        }
+
+        public void Edit()
+        {
+            EditAdminWindow editAdminWindow = new EditAdminWindow();
+            editAdminWindow.Show();
+
         }
     }
 }

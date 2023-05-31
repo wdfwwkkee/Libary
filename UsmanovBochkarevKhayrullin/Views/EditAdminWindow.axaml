@@ -2,8 +2,32 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:vm="using:UsmanovBochkarevKhayrullin.ViewModels"
+		mc:Ignorable="d" d:DesignWidth="250" d:DesignHeight="400"
         x:Class="UsmanovBochkarevKhayrullin.Views.EditAdminWindow"
         Title="EditAdminWindow">
-  Welcome to Avalonia!
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+		<vm:EditAdminWindowViewModel/>
+	</Design.DataContext>
+	<DockPanel HorizontalAlignment="Center">
+		<StackPanel DockPanel.Dock="Top">
+			<TextBlock Text="{Binding book.Name}"></TextBlock>
+		</StackPanel>
+		<StackPanel DockPanel.Dock="Bottom">
+			<Button Content="OK" HorizontalAlignment="Center"></Button>
+		</StackPanel>
+		<StackPanel>
+			<TextBlock Text="Наличие: " HorizontalAlignment="Center"></TextBlock>
+			<TextBox Width="70" Height="10"></TextBox>
+			<TextBlock Text="Название: " HorizontalAlignment="Center"></TextBlock>
+			<TextBox Width="70" Height="10"></TextBox>
+			<TextBlock Text="Жанр: " HorizontalAlignment="Center"></TextBlock>
+			<TextBox Width="70" Height="10"></TextBox>
+		</StackPanel>
+
+		
+	</DockPanel>
+	
 </Window>

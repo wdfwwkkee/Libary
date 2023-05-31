@@ -21,10 +21,10 @@
 					<TextBlock Text=")"></TextBlock>
 				</StackPanel>
 		<StackPanel DockPanel.Dock="Top" HorizontalAlignment="Right" Orientation="Horizontal">
-			<Button>
+			<Button Command="{Binding Edit}">
 				<TextBlock Text="Изменить"></TextBlock>
 			</Button>
-			<Button>
+			<Button Command="{Binding Save}">
 				<TextBlock Text="Сохранить"></TextBlock>
 			</Button>
 		</StackPanel>
