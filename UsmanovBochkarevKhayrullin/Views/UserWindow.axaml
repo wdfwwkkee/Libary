@@ -12,36 +12,55 @@
 		<!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
 		<vm:UserWindowViewModel/>
-	</Design.DataContext>
+	</Design.DataContext>		
 	<DockPanel>
 		<StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Right">
 			<TextBlock Text="Текущий пользователь: "></TextBlock>
 			<TextBlock Text="{Binding user.Login}" HorizontalAlignment="Right"></TextBlock>
 			<TextBlock Text="("></TextBlock>
-			<TextBlock Text="{Binding user.Role}" Foreground="Red"></TextBlock>
+			<TextBlock Text="{Binding user.Role}" Foreground="Blue"></TextBlock>
 			<TextBlock Text=")"></TextBlock>
 		</StackPanel>
-		<StackPanel>
-			<Button>
-				<TextBlock Text="{Binding Buy}" HorizontalAlignment="Right"></TextBlock>
+		<StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+			<Button Command="{Binding AddToCart}">
+				<TextBlock Text="Добавить"></TextBlock>
 			</Button>
+		<Button Command="{Binding Buy}" HorizontalAlignment="Right" Margin="5">
+			<TextBlock Text="Купить"></TextBlock>
+		</Button>
 		</StackPanel>
-					   
-		<ListBox Items="{Binding Books}">
-			<ListBox.ItemTemplate>
-				<DataTemplate>
-					<StackPanel>
-						<TextBlock Text="{Binding Name}" FontStyle="Oblique" FontSize="16"></TextBlock>
-						<TextBlock Text="В наличие:" FontStyle="Oblique" FontSize="16" HorizontalAlignment="Right"></TextBlock>
-						<TextBlock Text="{Binding Amount}" HorizontalAlignment="Right" ></TextBlock>
-						<TextBlock Text="{Binding Author}" FontSize="13"></TextBlock>
-						<TextBlock Text="{Binding Genre}" FontSize="15"></TextBlock>
-						
-					</StackPanel>
-				</DataTemplate>
-			</ListBox.ItemTemplate>
-		</ListBox>
-	</DockPanel>
+		<Grid RowDefinitions="*,*">	
+			<ListBox Margin="5" Items="{Binding Books}" SelectedItem="{Binding	SelectedBook}" SelectionMode="Single">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<StackPanel>
+							<TextBlock Text="{Binding Name}" FontStyle="Oblique" FontSize="16"></TextBlock>
+							<TextBlock Text="В наличие:" FontStyle="Oblique" FontSize="16" HorizontalAlignment="Right"></TextBlock>
+							<TextBlock Text="{Binding Amount}" HorizontalAlignment="Right" ></TextBlock>
+							<TextBlock Text="{Binding Author}" FontSize="13"></TextBlock>
+							<TextBlock Text="{Binding Genre}" FontSize="15"></TextBlock>
+						</StackPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+			<DockPanel Grid.Row="1" Margin="5">
+				<TextBlock Text="Мои товары" DockPanel.Dock="Top"/>
+				<ListBox Items="{Binding Cart}">	
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<StackPanel>
+							<TextBlock Text="{Binding Name}" FontStyle="Oblique" FontSize="16"></TextBlock>
+							<TextBlock Text="Количество:" FontStyle="Oblique" FontSize="16" HorizontalAlignment="Right"></TextBlock>
+							<TextBlock Text="{Binding Author}" FontSize="13"></TextBlock>
+							<TextBlock Text="{Binding Genre}" FontSize="15"></TextBlock>	
+						</StackPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+			</DockPanel>
+			
+		</Grid>			   
+		</DockPanel>
 	
 </Window>
 

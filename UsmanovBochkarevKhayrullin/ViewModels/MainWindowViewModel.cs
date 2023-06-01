@@ -26,6 +26,10 @@ namespace UsmanovBochkarevKhayrullin.ViewModels
             Owner = _owner;
             AuthCommand = ReactiveCommand.Create(Auth);
         }
+        public MainWindowViewModel()
+        {
+
+        }
 
         public void Auth()
         {

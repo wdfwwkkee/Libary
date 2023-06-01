@@ -18,19 +18,50 @@ namespace UsmanovBochkarevKhayrullin.ViewModels
             get => _books;
             set => this.RaiseAndSetIfChanged(ref _books, value);
         }
-
+        private ObservableCollection<Book> _carts;
+        public ObservableCollection<Book> Cart
+        {
+            get => _carts;
+            set => this.RaiseAndSetIfChanged(ref _carts, value);
+        }
+        public Book SelectedBook { get;set; } 
+        public void AddToCart()
+        {
+            if (SelectedBook.Amount <= 0)
+            {
+                SelectedBook.Amount = 0;
+                var messageBoxStandardWindow = MessageBox.Avalonia.MessageBoxManager
+  .GetMessageBoxStandardWindow("Нет в наличии", "Товара нет в наличии");
+                messageBoxStandardWindow.Show();
+                return; 
+            }
+            SelectedBook.Amount -= 1;
+            Cart.Add(SelectedBook);
+            
+        }
+        LibraryContext libraryContext;
+        public void Buy()
+        {
+            Cart = new ObservableCollection<Book>();
+            libraryContext.SaveChanges();
+            var old = Books;
+            Books = null;
+            Books = old;
+        }
         public User user { get; set; }
 
         public UserWindowViewModel()
         {
-            LibraryContext libraryContext = new LibraryContext();
+            libraryContext = new LibraryContext();
             libraryContext.Users.Load();
             libraryContext.Books.Load();
             Books = libraryContext.Books.Local.ToObservableCollection();
+            Cart = new ObservableCollection<Book>();
         }
         public UserWindowViewModel(User user) : this()
         {
             this.user = user;
         }
+        
     }
 }

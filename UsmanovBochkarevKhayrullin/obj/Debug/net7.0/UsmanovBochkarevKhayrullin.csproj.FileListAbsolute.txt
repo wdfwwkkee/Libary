@@ -358,3 +358,8 @@ C:\Users\student\Desktop\2\UsmanovBochkarevKhayrullin\obj\Debug\net7.0\refint\Us
 C:\Users\student\Desktop\2\UsmanovBochkarevKhayrullin\obj\Debug\net7.0\UsmanovBochkarevKhayrullin.pdb
 C:\Users\student\Desktop\2\UsmanovBochkarevKhayrullin\obj\Debug\net7.0\UsmanovBochkarevKhayrullin.genruntimeconfig.cache
 C:\Users\student\Desktop\2\UsmanovBochkarevKhayrullin\obj\Debug\net7.0\ref\UsmanovBochkarevKhayrullin.dll
+C:\Users\student\Desktop\2\UsmanovBochkarevKhayrullin\bin\Debug\net7.0\AvaloniaEdit.dll
+C:\Users\student\Desktop\2\UsmanovBochkarevKhayrullin\bin\Debug\net7.0\Markdown.Avalonia.SyntaxHigh.dll
+C:\Users\student\Desktop\2\UsmanovBochkarevKhayrullin\bin\Debug\net7.0\ColorTextBlock.Avalonia.dll
+C:\Users\student\Desktop\2\UsmanovBochkarevKhayrullin\bin\Debug\net7.0\Markdown.Avalonia.dll
+C:\Users\student\Desktop\2\UsmanovBochkarevKhayrullin\bin\Debug\net7.0\MessageBox.Avalonia.dll

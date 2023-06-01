@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[0.10.18, )"
             },
+            "MessageBox.Avalonia": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.5, )"
