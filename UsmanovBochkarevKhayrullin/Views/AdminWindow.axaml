@@ -21,6 +21,9 @@
 					<TextBlock Text=")"></TextBlock>
 				</StackPanel>
 		<StackPanel DockPanel.Dock="Top" HorizontalAlignment="Right" Orientation="Horizontal">
+			<Button Command="{Binding Update}">
+				<TextBlock Text="Обновить"></TextBlock>
+			</Button>
 			<Button Command="{Binding Edit}">
 				<TextBlock Text="Изменить"></TextBlock>
 			</Button>
@@ -28,7 +31,7 @@
 				<TextBlock Text="Сохранить"></TextBlock>
 			</Button>
 		</StackPanel>
-		<ListBox Items="{Binding Books}">
+		<ListBox Items="{Binding Books}" SelectedItem="{Binding	SelectedBook}" SelectionMode="Single">
 			<ListBox.ItemTemplate>
 				<DataTemplate>
 					<Grid>

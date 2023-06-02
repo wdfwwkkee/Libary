@@ -5,7 +5,7 @@
         xmlns:vm="using:UsmanovBochkarevKhayrullin.ViewModels"
 		mc:Ignorable="d" d:DesignWidth="250" d:DesignHeight="400"
         x:Class="UsmanovBochkarevKhayrullin.Views.EditAdminWindow"
-        Title="EditAdminWindow">
+        Title="EditAdminWindow" Width="250" Height="400">
 	<Design.DataContext>
 		<!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
@@ -13,21 +13,22 @@
 	</Design.DataContext>
 	<DockPanel HorizontalAlignment="Center">
 		<StackPanel DockPanel.Dock="Top">
-			<TextBlock Text="{Binding book.Name}"></TextBlock>
+			<TextBlock Text="{Binding book.Name}" FontWeight="Black" HorizontalAlignment="Center" FontSize="20"></TextBlock>
 		</StackPanel>
 		<StackPanel DockPanel.Dock="Bottom">
-			<Button Content="OK" HorizontalAlignment="Center"></Button>
+			<Button Command="{Binding Okey}" HorizontalAlignment="Center">
+				<TextBlock Text="Ok"></TextBlock>
+			</Button>
 		</StackPanel>
-		<StackPanel>
-			<TextBlock Text="Наличие: " HorizontalAlignment="Center"></TextBlock>
-			<TextBox Width="70" Height="10"></TextBox>
-			<TextBlock Text="Название: " HorizontalAlignment="Center"></TextBlock>
-			<TextBox Width="70" Height="10"></TextBox>
-			<TextBlock Text="Жанр: " HorizontalAlignment="Center"></TextBlock>
-			<TextBox Width="70" Height="10"></TextBox>
-		</StackPanel>
-
-		
+		<StackPanel Orientation="Vertical" Margin="60">
+			<TextBlock Text="Наличие: " FontWeight="Black" HorizontalAlignment="Center"></TextBlock>
+			<TextBox Text="{Binding book.Amount}" Width="70" Height="10" HorizontalContentAlignment="Center"></TextBox>
+			<TextBlock Text="Название: " FontWeight="Black" HorizontalAlignment="Center"></TextBlock>
+			<TextBox Text="{Binding book.Name}" Width="100" Height="10" HorizontalContentAlignment="Center"></TextBox>
+			<TextBlock Text="Жанр: " FontWeight="Black" HorizontalAlignment="Center"></TextBlock>
+			<TextBox Text="{Binding book.Genre}" Width="100" Height="10" HorizontalContentAlignment="Center"></TextBox>
+			<TextBlock Text="Автор: " FontWeight="Black" HorizontalAlignment="Center"></TextBlock>
+			<TextBox Text="{Binding book.Author}" Width="100" Height="10" HorizontalContentAlignment="Center"></TextBox>
+		</StackPanel>		
 	</DockPanel>
-	
 </Window>

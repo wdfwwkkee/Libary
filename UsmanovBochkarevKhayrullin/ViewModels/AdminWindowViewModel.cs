@@ -23,7 +23,8 @@ namespace UsmanovBochkarevKhayrullin.ViewModels
         public User user { get; set; }
 
         LibraryContext libraryContext;
-
+        public Book SelectedBook { get; set; }
+        
         public AdminWindowViewModel()
         {
             libraryContext = new LibraryContext();
@@ -39,12 +40,20 @@ namespace UsmanovBochkarevKhayrullin.ViewModels
         {
             libraryContext.SaveChanges();
         }
-
+        public void Update()
+        {
+            libraryContext = new LibraryContext();
+            libraryContext.Books.Load();
+            Books = libraryContext.Books.Local.ToObservableCollection();
+            var old = Books;
+            Books = null;
+            Books = old;
+        }
         public void Edit()
         {
             EditAdminWindow editAdminWindow = new EditAdminWindow();
+            editAdminWindow.DataContext = new EditAdminWindowViewModel(editAdminWindow, SelectedBook);
             editAdminWindow.Show();
-
         }
     }
 }
