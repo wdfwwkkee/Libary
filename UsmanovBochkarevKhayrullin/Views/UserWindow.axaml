@@ -22,11 +22,14 @@
 			<TextBlock Text=")"></TextBlock>
 		</StackPanel>
 		<StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+			<Button Command="{Binding Update}" Margin="5">
+				<TextBlock Text="Обновить" Foreground="Red"></TextBlock>
+			</Button>
 			<Button Command="{Binding AddToCart}">
-				<TextBlock Text="Добавить"></TextBlock>
+				<TextBlock Text="Добавить" Foreground="Green"></TextBlock>
 			</Button>
 		<Button Command="{Binding Buy}" HorizontalAlignment="Right" Margin="5">
-			<TextBlock Text="Купить"></TextBlock>
+			<TextBlock Text="Купить" Foreground="Blue"></TextBlock>
 		</Button>
 		</StackPanel>
 		<Grid RowDefinitions="*,*">	
@@ -34,8 +37,8 @@
 				<ListBox.ItemTemplate>
 					<DataTemplate>
 						<StackPanel>
-							<TextBlock Text="{Binding Name}" FontStyle="Oblique" FontSize="16"></TextBlock>
-							<TextBlock Text="В наличие:" FontStyle="Oblique" FontSize="16" HorizontalAlignment="Right"></TextBlock>
+							<TextBlock Text="{Binding Name}" FontWeight="Black" FontStyle="Oblique" FontSize="16"></TextBlock>
+							<TextBlock Text="В наличии:" FontStyle="Oblique" FontSize="16" HorizontalAlignment="Right"></TextBlock>
 							<TextBlock Text="{Binding Amount}" HorizontalAlignment="Right" ></TextBlock>
 							<TextBlock Text="{Binding Author}" FontSize="13"></TextBlock>
 							<TextBlock Text="{Binding Genre}" FontSize="15"></TextBlock>
@@ -49,8 +52,7 @@
 				<ListBox.ItemTemplate>
 					<DataTemplate>
 						<StackPanel>
-							<TextBlock Text="{Binding Name}" FontStyle="Oblique" FontSize="16"></TextBlock>
-							<TextBlock Text="Количество:" FontStyle="Oblique" FontSize="16" HorizontalAlignment="Right"></TextBlock>
+							<TextBlock Text="{Binding Name}" FontWeight="Black" FontStyle="Oblique" FontSize="16"></TextBlock>
 							<TextBlock Text="{Binding Author}" FontSize="13"></TextBlock>
 							<TextBlock Text="{Binding Genre}" FontSize="15"></TextBlock>	
 						</StackPanel>

@@ -62,6 +62,15 @@ namespace UsmanovBochkarevKhayrullin.ViewModels
         {
             this.user = user;
         }
+        public void Update()
+        {
+            libraryContext = new LibraryContext();
+            libraryContext.Books.Load();
+            Books = libraryContext.Books.Local.ToObservableCollection();
+            var old = Books;
+            Books = null;
+            Books = old;
+        }
         
     }
 }
