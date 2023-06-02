@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\student\\Desktop\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin.csproj": {}
+    "C:\\Users\\student\\Desktop\\2\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\student\\Desktop\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin.csproj": {
+    "C:\\Users\\student\\Desktop\\2\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Desktop\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin.csproj",
+        "projectUniqueName": "C:\\Users\\student\\Desktop\\2\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin.csproj",
         "projectName": "UsmanovBochkarevKhayrullin",
-        "projectPath": "C:\\Users\\student\\Desktop\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin.csproj",
+        "projectPath": "C:\\Users\\student\\Desktop\\2\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin.csproj",
         "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Desktop\\UsmanovBochkarevKhayrullin\\UsmanovBochkarevKhayrullin\\obj\\",
+        "outputPath": "C:\\Users\\student\\Desktop\\2\\UsmanovBochkarevKhayrullin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,6 +59,10 @@
             "Avalonia.ReactiveUI": {
               "target": "Package",
               "version": "[0.10.18, )"
+            },
+            "MessageBox.Avalonia": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

@@ -26,11 +26,16 @@ C:\Users\student\.nuget\packages\avalonia\0.10.18\lib\netcoreapp2.0\Avalonia.The
 C:\Users\student\.nuget\packages\avalonia\0.10.18\lib\netcoreapp2.0\Avalonia.Visuals.dll
 C:\Users\student\.nuget\packages\avalonia.win32\0.10.18\lib\netstandard2.0\Avalonia.Win32.dll
 C:\Users\student\.nuget\packages\avalonia.x11\0.10.18\lib\netstandard2.0\Avalonia.X11.dll
+C:\Users\student\.nuget\packages\avalonia.avaloniaedit\0.10.0\lib\netstandard2.0\AvaloniaEdit.dll
 C:\Users\student\.nuget\packages\azure.core\1.24.0\lib\net5.0\Azure.Core.dll
 C:\Users\student\.nuget\packages\azure.identity\1.6.0\lib\netstandard2.0\Azure.Identity.dll
+C:\Users\student\.nuget\packages\markdown.avalonia.tight\0.10.11\lib\netcoreapp2.0\ColorTextBlock.Avalonia.dll
 C:\Users\student\.nuget\packages\dynamicdata\7.1.1\lib\net5.0\DynamicData.dll
 C:\Users\student\.nuget\packages\harfbuzzsharp\2.8.2.1-preview.108\lib\net6.0\HarfBuzzSharp.dll
 C:\Users\student\.nuget\packages\jetbrains.annotations\10.3.0\lib\netstandard1.0\JetBrains.Annotations.dll
+C:\Users\student\.nuget\packages\markdown.avalonia.tight\0.10.11\lib\netcoreapp2.0\Markdown.Avalonia.dll
+C:\Users\student\.nuget\packages\markdown.avalonia.syntaxhigh\0.10.11\lib\netcoreapp2.0\Markdown.Avalonia.SyntaxHigh.dll
+C:\Users\student\.nuget\packages\messagebox.avalonia\2.1.0\lib\netstandard2.0\MessageBox.Avalonia.dll
 C:\Users\student\.nuget\packages\microsoft.bcl.asyncinterfaces\1.1.1\ref\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\student\.nuget\packages\microsoft.codeanalysis.csharp\3.4.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\student\.nuget\packages\microsoft.codeanalysis.csharp.scripting\3.4.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll

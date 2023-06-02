@@ -2,8 +2,67 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:vm="using:UsmanovBochkarevKhayrullin.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		x:DataType="vm:UserWindowViewModel"
         x:Class="UsmanovBochkarevKhayrullin.Views.UserWindow"
-        Title="UserWindow">
-  Welcome to Avalonia!
+        Title="Library">
+	
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+		<vm:UserWindowViewModel/>
+	</Design.DataContext>		
+	<DockPanel>
+		<StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Right">
+			<TextBlock Text="Текущий пользователь: "></TextBlock>
+			<TextBlock Text="{Binding user.Login}" HorizontalAlignment="Right"></TextBlock>
+			<TextBlock Text="("></TextBlock>
+			<TextBlock Text="{Binding user.Role}" Foreground="Blue"></TextBlock>
+			<TextBlock Text=")"></TextBlock>
+		</StackPanel>
+		<StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+			<Button Command="{Binding Update}" Margin="5">
+				<TextBlock Text="Обновить" Foreground="Red"></TextBlock>
+			</Button>
+			<Button Command="{Binding AddToCart}">
+				<TextBlock Text="Добавить" Foreground="Green"></TextBlock>
+			</Button>
+		<Button Command="{Binding Buy}" HorizontalAlignment="Right" Margin="5">
+			<TextBlock Text="Купить" Foreground="Blue"></TextBlock>
+		</Button>
+		</StackPanel>
+		<Grid RowDefinitions="*,*">	
+			<ListBox Margin="5" Items="{Binding Books}" SelectedItem="{Binding	SelectedBook}" SelectionMode="Single">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<StackPanel>
+							<TextBlock Text="{Binding Name}" FontWeight="Black" FontStyle="Oblique" FontSize="16"></TextBlock>
+							<TextBlock Text="В наличии:" FontStyle="Oblique" FontSize="16" HorizontalAlignment="Right"></TextBlock>
+							<TextBlock Text="{Binding Amount}" HorizontalAlignment="Right" ></TextBlock>
+							<TextBlock Text="{Binding Author}" FontSize="13"></TextBlock>
+							<TextBlock Text="{Binding Genre}" FontSize="15"></TextBlock>
+						</StackPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+			<DockPanel Grid.Row="1" Margin="5">
+				<TextBlock Text="Мои товары" DockPanel.Dock="Top"/>
+				<ListBox Items="{Binding Cart}">	
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<StackPanel>
+							<TextBlock Text="{Binding Name}" FontWeight="Black" FontStyle="Oblique" FontSize="16"></TextBlock>
+							<TextBlock Text="{Binding Author}" FontSize="13"></TextBlock>
+							<TextBlock Text="{Binding Genre}" FontSize="15"></TextBlock>	
+						</StackPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+			</DockPanel>
+			
+		</Grid>			   
+		</DockPanel>
+	
 </Window>
+
